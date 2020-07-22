@@ -23,7 +23,7 @@ class LibtarConan(ConanFile):
 
     def requirements(self):
         if self.options.withzlib:
-            self.requires.add("zlib/1.2.11@conan/stable")
+            self.requires.add("zlib/1.2.11")
 
     def config_options(self):
         if self.settings.os == "Windows":
